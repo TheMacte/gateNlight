@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ebN-ge-9oA">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,32 +12,14 @@
             <objects>
                 <viewController storyboardIdentifier="ButtonsController" id="STC-3J-r11" customClass="ButtonsController" customModule="gateNlight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="01P-it-eoJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeN-kP-K2k">
-                                <rect key="frame" x="37" y="175.66666666666666" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="3Af-u2-4gw"/>
-                                    <constraint firstAttribute="width" secondItem="MeN-kP-K2k" secondAttribute="height" multiplier="1:1" id="Ero-ZC-oZx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <state key="normal" title="Ворота" image="lock"/>
-                                <connections>
-                                    <action selector="gateButton:" destination="STC-3J-r11" eventType="touchUpInside" id="X7d-qv-Otf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ключ в порядке" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6k-sx-fav">
-                                <rect key="frame" x="87.666666666666686" y="96" width="200" height="33.666666666666657"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0K-lD-SBf">
-                                <rect key="frame" x="263" y="175.66666666666666" width="75" height="75"/>
+                                <rect key="frame" x="169.5" y="491" width="75" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="7Rf-zK-ZO3"/>
-                                    <constraint firstAttribute="width" secondItem="u0K-lD-SBf" secondAttribute="height" multiplier="1:1" id="lHW-jP-YT9"/>
+                                    <constraint firstAttribute="width" constant="75" id="ehv-5y-L5X"/>
+                                    <constraint firstAttribute="width" secondItem="u0K-lD-SBf" secondAttribute="height" multiplier="1:1" id="scy-h3-wTd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Свет" image="lamp"/>
@@ -45,84 +27,98 @@
                                     <action selector="lightButton:" destination="STC-3J-r11" eventType="touchUpInside" id="LRd-AZ-VfF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeN-kP-K2k">
+                                <rect key="frame" x="169.5" y="210" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MeN-kP-K2k" secondAttribute="height" multiplier="1:1" id="18p-KU-doC"/>
+                                    <constraint firstAttribute="width" constant="75" id="DVI-Xn-QYZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <state key="normal" title="Ворота" image="lock"/>
+                                <connections>
+                                    <action selector="gateButton:" destination="STC-3J-r11" eventType="touchUpInside" id="X7d-qv-Otf"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1SW-9i-WRy" firstAttribute="trailing" secondItem="u0K-lD-SBf" secondAttribute="trailing" constant="37" id="2ej-VU-ZbY"/>
-                            <constraint firstItem="u0K-lD-SBf" firstAttribute="centerY" secondItem="MeN-kP-K2k" secondAttribute="centerY" id="4LB-yO-1Fe"/>
-                            <constraint firstItem="R6k-sx-fav" firstAttribute="top" secondItem="1SW-9i-WRy" secondAttribute="top" constant="52" id="93H-cu-PYt"/>
-                            <constraint firstItem="MeN-kP-K2k" firstAttribute="top" secondItem="R6k-sx-fav" secondAttribute="bottom" constant="46" id="oIx-1P-S0y"/>
-                            <constraint firstItem="MeN-kP-K2k" firstAttribute="leading" secondItem="1SW-9i-WRy" secondAttribute="leading" constant="37" id="pdu-35-ePB"/>
-                            <constraint firstItem="R6k-sx-fav" firstAttribute="centerX" secondItem="1SW-9i-WRy" secondAttribute="centerX" id="yGm-pf-qMt"/>
+                            <constraint firstItem="MeN-kP-K2k" firstAttribute="centerX" secondItem="01P-it-eoJ" secondAttribute="centerX" id="LZN-US-v37"/>
+                            <constraint firstItem="MeN-kP-K2k" firstAttribute="top" secondItem="1SW-9i-WRy" secondAttribute="top" constant="166" id="Pyp-st-USY"/>
+                            <constraint firstItem="u0K-lD-SBf" firstAttribute="centerX" secondItem="MeN-kP-K2k" secondAttribute="centerX" id="ceg-47-3Gp"/>
+                            <constraint firstItem="u0K-lD-SBf" firstAttribute="top" secondItem="MeN-kP-K2k" secondAttribute="bottom" constant="206" id="u1U-lg-cS6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1SW-9i-WRy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Кнопки" image="square.split.1x2.fill" catalog="system" selectedImage="rectangle.grid.1x2.fill" id="xgw-1u-Had"/>
-                    <connections>
-                        <outlet property="keyTest" destination="R6k-sx-fav" id="VDH-nq-RoQ"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Кнопки" image="keyboard" catalog="system" selectedImage="keyboard" id="xgw-1u-Had"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cz-oe-ilz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602.89855072463774" y="-697.09821428571422"/>
+            <point key="canvasLocation" x="602.39999999999998" y="-697.53694581280786"/>
         </scene>
         <!--Настройки-->
-        <scene sceneID="eEa-jT-AQQ">
+        <scene sceneID="KQl-jF-PkF">
             <objects>
-                <tableViewController id="Byl-iq-YPC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v76-dg-96c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                <viewController storyboardIdentifier="SettingsController" id="ZMS-C8-nB8" userLabel="Настройки" customClass="SettingsController" customModule="gateNlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cW-ZB-Idq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-UZ-QxH">
+                                <rect key="frame" x="71" y="50.5" width="323" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ключ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM5-Tr-hUz">
+                                <rect key="frame" x="20" y="57" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сервер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDt-Dx-xBC">
+                                <rect key="frame" x="20" y="114" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-Pq-4Jn">
+                                <rect key="frame" x="83" y="107.5" width="311" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXR-mP-MZS">
+                                <rect key="frame" x="168.5" y="177.5" width="77" height="30"/>
+                                <state key="normal" title="Сохранить"/>
+                                <connections>
+                                    <action selector="saveSettingsButton:" destination="ZMS-C8-nB8" eventType="touchUpInside" id="9p2-ed-6q6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ysp-qH-aS6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ysp-qH-aS6" id="oFV-fQ-vob">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Byl-iq-YPC" id="ILS-xl-TMt"/>
-                            <outlet property="delegate" destination="Byl-iq-YPC" id="ImV-pe-3Gt"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Настройки" image="tuningfork" catalog="system" id="qOm-f9-C6P"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjA-eZ-6CX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="GDt-Dx-xBC" firstAttribute="leading" secondItem="n0W-4g-fgY" secondAttribute="leading" constant="20" id="3zC-sV-WdR"/>
+                            <constraint firstItem="GDt-Dx-xBC" firstAttribute="top" secondItem="SM5-Tr-hUz" secondAttribute="bottom" constant="36" id="8QA-sw-f0f"/>
+                            <constraint firstItem="TXR-mP-MZS" firstAttribute="top" secondItem="V1g-Pq-4Jn" secondAttribute="bottom" constant="36" id="QUt-Io-W9R"/>
+                            <constraint firstItem="V1g-Pq-4Jn" firstAttribute="leading" secondItem="GDt-Dx-xBC" secondAttribute="trailing" constant="2" id="Qey-o3-h06"/>
+                            <constraint firstItem="oT0-UZ-QxH" firstAttribute="leading" secondItem="SM5-Tr-hUz" secondAttribute="trailing" constant="8" id="ThU-hl-fID"/>
+                            <constraint firstItem="n0W-4g-fgY" firstAttribute="trailing" secondItem="oT0-UZ-QxH" secondAttribute="trailing" constant="20" id="Tyo-OM-wxc"/>
+                            <constraint firstItem="TXR-mP-MZS" firstAttribute="centerX" secondItem="n0W-4g-fgY" secondAttribute="centerX" id="WHP-EW-6tl"/>
+                            <constraint firstItem="oT0-UZ-QxH" firstAttribute="centerY" secondItem="SM5-Tr-hUz" secondAttribute="centerY" id="bSM-5e-rz9"/>
+                            <constraint firstItem="SM5-Tr-hUz" firstAttribute="leading" secondItem="n0W-4g-fgY" secondAttribute="leading" constant="20" id="dtQ-mg-UE9"/>
+                            <constraint firstItem="SM5-Tr-hUz" firstAttribute="top" secondItem="n0W-4g-fgY" secondAttribute="top" constant="13" id="erq-Mo-ev6"/>
+                            <constraint firstItem="V1g-Pq-4Jn" firstAttribute="centerY" secondItem="GDt-Dx-xBC" secondAttribute="centerY" id="gwS-t7-l2e"/>
+                            <constraint firstItem="n0W-4g-fgY" firstAttribute="trailing" secondItem="V1g-Pq-4Jn" secondAttribute="trailing" constant="20" id="rXQ-FR-K88"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n0W-4g-fgY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Настройки" image="gear" catalog="system" selectedImage="gear" id="r3D-0Y-d1C"/>
+                    <connections>
+                        <outlet property="keyTextField" destination="oT0-UZ-QxH" id="SHR-Jy-Npn"/>
+                        <outlet property="serverTextField" destination="V1g-Pq-4Jn" id="145-7e-wH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7T-NI-YSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="603" y="-44"/>
-        </scene>
-        <!--Информация-->
-        <scene sceneID="yYk-d6-gTN">
-            <objects>
-                <tableViewController id="kAq-FM-rTx" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PQw-y0-5uf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7yY-P8-spU">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7yY-P8-spU" id="aZ6-cl-veD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="kAq-FM-rTx" id="SwQ-Lx-nwU"/>
-                            <outlet property="delegate" destination="kAq-FM-rTx" id="Pxq-ap-jH2"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Информация" image="info.circle" catalog="system" id="5Iq-ds-wi8"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ndz-e8-qDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-362" y="291"/>
+            <point key="canvasLocation" x="598.55072463768124" y="-33.482142857142854"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CMZ-ca-etl">
@@ -135,8 +131,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="STC-3J-r11" kind="relationship" relationship="viewControllers" id="bga-Xc-TIB"/>
-                        <segue destination="Byl-iq-YPC" kind="relationship" relationship="viewControllers" id="Y9v-y3-aEo"/>
-                        <segue destination="kAq-FM-rTx" kind="relationship" relationship="viewControllers" id="nyH-Dp-1Fm"/>
+                        <segue destination="ZMS-C8-nB8" kind="relationship" relationship="viewControllers" id="qyU-Mh-cN0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Caa-lP-adJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -145,11 +140,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="keyboard" catalog="system" width="64" height="34"/>
         <image name="lamp" width="512" height="512"/>
         <image name="lock" width="512" height="512"/>
-        <image name="rectangle.grid.1x2.fill" catalog="system" width="64" height="50"/>
-        <image name="square.split.1x2.fill" catalog="system" width="64" height="56"/>
-        <image name="tuningfork" catalog="system" width="64" height="58"/>
     </resources>
 </document>
