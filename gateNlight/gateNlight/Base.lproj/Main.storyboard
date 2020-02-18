@@ -65,6 +65,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-UZ-QxH">
                                 <rect key="frame" x="71" y="50.5" width="323" height="34"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -82,18 +83,21 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-Pq-4Jn">
                                 <rect key="frame" x="83" y="107.5" width="311" height="34"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXR-mP-MZS">
-                                <rect key="frame" x="168.5" y="177.5" width="77" height="30"/>
-                                <state key="normal" title="Сохранить"/>
+                                <rect key="frame" x="160.5" y="177.5" width="93" height="30"/>
+                                <state key="normal" title="  Сохранить  ">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="saveSettingsButton:" destination="ZMS-C8-nB8" eventType="touchUpInside" id="9p2-ed-6q6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GDt-Dx-xBC" firstAttribute="leading" secondItem="n0W-4g-fgY" secondAttribute="leading" constant="20" id="3zC-sV-WdR"/>
                             <constraint firstItem="GDt-Dx-xBC" firstAttribute="top" secondItem="SM5-Tr-hUz" secondAttribute="bottom" constant="36" id="8QA-sw-f0f"/>
